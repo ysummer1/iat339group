@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li{
+    margin-top:5vh;
+}
+
+.homeBg{
+    background-image: url("https://via.placeholder.com/1000"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.homeTitle{
+    text-align: center;
+    margin-top:30vh;
+}
+
+.homeSub{
+    display: flex;
+    flex-wrap: wrap;
+    width:100vw;
+}
+
+.homeSub img{
+    width:50vw;
+}
+
+.homeSub p{
+    width:50vw;
+    padding-top:35vh;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+
