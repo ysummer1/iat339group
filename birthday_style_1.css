@@ -1,0 +1,61 @@
+.birthdayTitle, .sucssTitle, .fqaTitle{
+    display: block;
+    width:40vw;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    margin-top:20vh;
+}
+
+.custStep{
+    display: flex;
+    justify-content: space-between;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20vh;
+    flex-wrap:wrap;
+}
+
+.custStep figure{
+    position: relative;
+}
+
+.custStep figcaption{
+    position: absolute;
+    bottom:10vh;
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.custStep figure:hover figcaption{
+    opacity: 1;
+}
+
+.custStep p{
+    text-align: center;
+}
+
+.birthdaySucss{
+    display: flex;
+    flex-wrap:wrap;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10vh;
+}
+
+.birthdaySucss img{
+    width:26.4vw;
+}
+
+.fqa{
+    display: flex;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.fqa li{
+    margin-top:5vh;
+}
