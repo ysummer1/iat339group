@@ -1,0 +1,63 @@
+/* Bakery Style */
+
+*{
+    box-sizing: border-box;
+}
+
+.bakeryNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10vh;
+}
+
+.bakeryNav figcaption{
+    text-align: center;
+    width:15vw;
+}
+
+#bakeryCarousel{
+    display: flex;
+    width:80vw;
+    height:50vh;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10vh;
+}
+
+.carousel-inner img{
+    width:100%;
+}
+
+.bakeryItems{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10vh;
+}
+
+.bakeryItems figure{
+    margin-top:5vh;
+    position: relative;
+}
+
+.bakeryItems figure figcaption{
+    position: absolute;
+    top:20vh;
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.bakeryItems img{
+    width:18vw;
+}
+
+.bakeryItems figure:hover figcaption{
+    opacity:1;
+}
