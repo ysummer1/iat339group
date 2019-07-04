@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JENNA'S CAKE - CONTACT</title>
+    <meta charset="utf-8">
+    <link href="contact.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleBasket.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class=mainnav>
+
+        <nav>
+            <ul>
+                <li class="logo"><a href="HomePage.html">home</a></li>
+                <li><a href="BirthdayCake.html">BIRTHDAY CAKE</a></li>
+                <li><a href="Bakery.html">BAKERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Basket.html">BASKET</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- The title and subtitle for this page -->
+    <div class=box1>
+        <div class=con-discription>
+            <div class=con-img>
+                <img src="https://www.maisonselby.com/wp-content/uploads/sites/52/2019/03/contact.png" alt="">
+            </div>
+            <h3 class="">Reach Us</h3>
+            <h4>we would like hearing from you</h4>
+        </div>
+    </div>
+
+    <!-- The three images for location, hours and contact -->
+    <div class="conmenu">
+
+        <div id="location" class="conmenuSub">
+            <h2> <a href="#location">Location</a></h2>
+
+            <a href="#location_map">
+                <img src="imgs/store/store3.jpeg" alt=""></a>
+            <div class="conSub-item">250-13450 102 Ave, Surrey, BC V3T 0A3</div>
+
+        </div>
+
+        <div id="hours" class="conmenuSub">
+            <h2>Hours</h2>
+            <img src="imgs/store/store6.jpeg" alt="">
+            <div class=conSub-item>
+                <p>
+                    Sunday – Monday: Closed
+                </p>
+                <p>
+                    Tuesday – Friday: 12pm-6pm
+                </p>
+                <p>
+                    Saturday: 12pm-5pm
+                </p>
+                <p>
+                    Good Friday: 12-6pm
+                </p>
+            </div>
+        </div>
+
+        <div id="contact" class="conmenuSub">
+
+            <h2>Contact</h2>
+            <img src="imgs/store/store4.jpeg" alt="">
+            <div class=conSub-item>
+                <p>
+                    Phone: (778) xxx-xxxx
+                </p>
+                <p>
+                    Email: xxxx@xxxxx.com
+                </p>
+                <p>
+                    Please allow 2 business days for an email response. Thank you!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The input form for feedback -->
+    <div class="feedback">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="phone..">
+
+            <button class="payButton" type="button"
+                onclick="alert('Your feedback has been submitted!')">Submite</button>
+        </form>
+    </div>
+
+    <!-- The google map -->
+    <div class="conSub">
+        <div id=location_map>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.730656501584!2d-122.85163034955758!3d49.18669738538772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x27cc0a8105206a6c!2sSimon+Fraser+University+-+Surrey+Campus!5e0!3m2!1sen!2sca!4v1547356709673"
+                frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="leftFooter">
+                <ul>
+                    <li class="logo"><a href="HomePage.html">home
+                            <!-- <img src="https://via.placeholder.com/150x80" alt=""> --></a></li>
+                    <li><a href="BirthdayCake.html">Bithday Cake</a></li>
+                    <li><a href="Bakery.html">Bakery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Basket.html">Basket</a></li>
+                </ul>
+            </div>
+            <div class="midFooter">
+                <p>
+                    Sunday – Monday: Closed
+                </p>
+                <p>
+                    Tuesday – Friday: 12pm-6pm
+                </p>
+                <p>
+                    Saturday: 12pm-5pm
+                </p>
+                <p>
+                    Good Friday: 12-6pm
+                </p>
+            </div>
+            <div class="rightFooter">
+                <p>
+                    Phone: (778) xxx-xxxx
+                </p>
+                <p>
+                    Email: xxxx@xxxxx.com
+                </p>
+                <p>
+                    Please allow 2 business days for an email response. Thank you!</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

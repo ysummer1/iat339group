@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/* the background image of homepage */
+.homeBg{
+    background-image: url("imgs/homepageImg/mainBg.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 96vh; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    
+}
+
+/* the title and intro content */
+.homeTitle{
+    display: block;
+    width:60vw;
+    text-align: center;
+    /* margin-top:10vh;  */
+    padding-top: 35vh;
+    font-size:2rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.homeTitle h1{
+    font-size:6rem;
+}
+.homeSub{
+    width:100vw;
+    background-color: rgb(99,148,178);
+    /* border: #cccccc solid 10px; */
+}
+
+/* the brief content of each page */
+.sub-cont1{
+    background-image: url("imgs/homepageImg/birCake.jpg");
+    height:90vh;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    z-index: -1;
+    background-position: top 10vh right 15vw;
+
+}
+
+/* the content of birthday cake */
+.sub-description1
+{
+    background-color:  rgba(227,217,182,.7);    
+    height:70%;
+    margin-top:auto;
+    margin-left: 60vw;
+    transition: background-color 1000ms ease-out;
+
+}
+
+.sub-cont2{
+    background-image: url("imgs/homepageImg/bakeImg.jpg");
+    height:90vh;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+/* the content of bakery */
+.sub-description2{
+background-color:  rgba(227,217,182,.7);
+height:70%;
+
+margin-top:auto;
+margin-left: 2vw;
+transition: background-color 1000ms ease-out;
+
+}
+.sub-cont3{
+    background-image: url("imgs/store/store8.jpeg");
+height:90vh;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    z-index: -1;
+
+}
+
+/* the content of about */
+.sub-description3{
+background-color:  rgba(227,217,182,.7);
+height:70%;
+margin-top:0;
+margin-left: 60vw;
+transition: background-color 1000ms ease-out;
+}
+
+.sub-cont4{
+    background-image: url("imgs/store/store4.jpeg");
+    height:90vh;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+/* the content of contact */
+.sub-description4{
+background-color:  rgba(227,217,182,.7);
+height:70%;
+margin-top:auto;
+margin-left: 2vw;
+transition: background-color 1000ms ease-out;
+}
+
+.homeSub .sub{
+
+    display:flex;
+    /* flex-wrap: wrap; */
+    width:100vw;
+
+
+    background-color: rgb(227,217,182);
+
+
+}
+.sub-description1:hover,
+.sub-description2:hover,
+.sub-description3:hover,
+.sub-description4:hover{
+    background-color:  rgb(227,217,182);
+    transition: background-color 500ms ease-in-out
+
+  ;
+
+}
+
+.homeSub p {
+    width:30vw;
+    padding-top:3rem;
+    padding-left:5vw;
+    padding-right:5vw;
+    color:rgb(55,123,181);
+    /* font-size:2rem; */
+}
+/* 
+the hover effect */
+a:hover{
+    text-decoration: none!important;
+}
+
+.homeSub h2{
+    padding-top:15rem;
+    padding-left:5vw;
+    padding-right:5vw;
+    margin:0;
+    color:rgb(47, 103, 153);
+}
+
+/* the mobile version */
+@media(max-width:375px){
+    .homeSub p{
+        padding-top:4rem;
+        font-size:1rem;
+    }
+
+    .homeTitle{
+        width:80vw;
+    }
+}
+
+/* the explore button */
+.exploreButton{
+    font-size: 2rem;
+    width:10vw;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+.exploreButton{
+  position: relative;
+  width: 250px; height: 60px;
+  background: rgb(138,174,162);
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: color .3s;
+  /* Typo */
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.exploreButton:after {
+  position: absolute;
+  top: 90%; left: 0;
+  width: 100%; height: 100%;
+  background:rgb(101,116,113);
+  content: "";
+  z-index: -2;
+  transition: transform .3s;
+}
+
+.exploreButton:hover::after {
+    transform: translateY(-80%);
+    transition: transform .3s;
+  }

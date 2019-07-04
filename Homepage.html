@@ -1,44 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 
 <head>
-    <title>CSS Positioning - Code Task</title>
+    <title>JENNA'S CAKE</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <div class="homeBg">
+
+    <div class="mainnav">
         <nav>
             <ul>
-                <li><img src="https://via.placeholder.com/150x50" alt=""></li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
+                <li class="logo"><a href="HomePage.html">home</a></li>
+                <li><a href="BirthdayCake.html">BIRTHDAY CAKE</a></li>
+                <li><a href="Bakery.html">BAKERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Basket.html">BASKET</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+    </div>
+
+
+    <!-- The brand name and introduction for company -->
+    <div class="homeBg">
         <div class="homeTitle">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h1>JENNA's Cake</h1>
+            <p>The JENNA cake is a cake factory which all
+                about arts and cake. We offering special designed
+                cakes and desserts designed by our designers or YOU.</p>
+        </div>
+        <!-- The button links to bakery page -->
+        <button class="exploreButton" type="button" onclick="location.href='Bakery.html'">Explore</button>
+    </div>
+
+    <!-- The brief content for each page -->
+    <div class="homeSub">
+        <!-- The brief content for BirthdayCake -->
+        <div class="sub-cont1 sub"><a href="BirthdayCake.html">
+                <div class="sub-description1">
+                    <h2>Custom cake online</h2>
+                    <p> we specialize in custom edible works of art for the birthday cake you desired.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- The brief content for bakery  -->
+        <div class="sub-cont2 sub"> <a href="Bakery.html">
+                <div class="sub-description2">
+                    <h2>Bakery Lab</h2>
+                    <p> we update our dessert menu regularly and keep our best selling at the same time.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- The brief content for about -->
+        <div class="sub-cont3 sub">
+            <div class="sub-description3"><a href="about.html">
+                    <h2> Our Story</h2>
+                    <p> we are the dessert hunters wanna find out more about us?</p>
+                </a>
+            </div>
+            
+        </div>
+        <!-- The brief content for contact -->
+        <div class="sub-cont4 sub"><a href="contact.html">
+                <div class="sub-description4">
+                    <h2>Contact</h2>
+                    <p> We would love for you to pop in for a visit to our storefront.
+                    </p>
+                </div>
+            </a>
         </div>
     </div>
-
-    <div class="homeSub">
-        
-        <img src="https://via.placeholder.com/500" alt="">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <img src="https://via.placeholder.com/500" alt="">
-        
-        <img src="https://via.placeholder.com/500" alt="">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <img src="https://via.placeholder.com/500" alt="">
-        
-    </div>
-
+    <footer>
+        <div class="footer">
+            <div class="leftFooter">
+                <ul>
+                    <li class="logo"><a href="HomePage.html">home
+                            <!-- <img src="https://via.placeholder.com/150x80" alt=""> --></a></li>
+                    <li><a href="BirthdayCake.html">Bithday Cake</a></li>
+                    <li><a href="Bakery.html">Bakery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Basket.html">Basket</a></li>
+                </ul>
+            </div>
+            <div class="midFooter">
+                <p>
+                    Sunday – Monday: Closed
+                </p>
+                <p>
+                    Tuesday – Friday: 12pm-6pm
+                </p>
+                <p>
+                    Saturday: 12pm-5pm
+                </p>
+                <p>
+                    Good Friday: 12-6pm
+                </p>
+            </div>
+            <div class="rightFooter">
+                <p>
+                    Phone: (778) xxx-xxxx
+                </p>
+                <p>
+                    Email: xxxx@xxxxx.com
+                </p>
+                <p>
+                    Please allow 2 business days for an email response. Thank you!</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

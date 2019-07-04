@@ -1,0 +1,129 @@
+/* the title on this page */
+.birthdayTitle, .sucssTitle, .fqaTitle{
+    display: block;
+    flex-wrap:wrap;
+    width:40vw;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    margin-top:25vh;
+}
+
+/* the video background */
+#videoBG {
+    position:fixed;
+    z-index: -1;
+/*not work if the screen ratio is below 16/9*/
+    width:100%;     
+    height: auto;
+top: 0%;
+}
+
+/* the responsive setting of video */
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('imgs/homepageImg/bakeImg.jpg');
+        background-size: cover;
+    }
+}
+
+/* the steps of customize the cake */
+.custStepBlock {
+    width:25% ;
+    background-color: antiquewhite;
+    padding: 2rem;
+}
+
+.custStepBlock img{
+width: 100%;
+
+}
+
+.custStep{
+    display: flex;
+    justify-content: space-between;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20vh;
+    flex-wrap:wrap;
+}
+
+.custStep figure{
+    position: relative;
+}
+
+.custStep figcaption{
+    position: absolute;
+    bottom:10vh;
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.custStep figure:hover figcaption{
+    opacity: 1;
+}
+
+.custStep p{
+    text-align: center;
+}
+
+.birthdaySucss{
+    display: flex;
+    flex-wrap:wrap;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10vh;
+    background-color: rgb(237,223,214);
+
+}
+
+.birthdaySucss img{
+    width:26.65vw;
+}
+
+/* fqa content */
+.fqa{
+    display: flex;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    /* font-size:2rem; */
+    background-color:  rgba(237,223,214,.8);
+    padding: 4rem;
+}
+
+.fqa li{
+    margin-top:5vh;
+}
+
+@media(max-width:375px){
+    .birthdayTitle, .sucssTitle, .fqaTitle{
+        width:80vw;
+    }
+
+    .custStepBlock {
+        width:40vw ;
+    }
+    body { 
+        font-size: 2em; 
+     }
+    
+}

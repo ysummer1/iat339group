@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* The title and three images(loaction, hours and contact) */
+.conmenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box1{
+    display: block;
+    width:40vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10vh;
+    text-align:center;
+}
+
+
+.con-discription img{
+    width:15vw;
+}
+
+.conmenu img{
+    width:20vw; 
+}
+
+.conSub-item{
+    width:20vw;
+}
+
+
+.con-discription h3{
+    padding-bottom: 2rem;
+    border-bottom: medium solid black;
+}
+
+.conmenu a:hover {
+    text-decoration: none;
+}
+
+.box1{
+    padding-top: 10vh ;
+}
+
+  /* The feedback form */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+.feedback{
+    display: block;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top:10vh;
+  }
+
+  /* The google map */
+#location_map iframe{
+      margin-top:10vh;
+      width:80vw;
+      height:40vw;
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+  }
+
+  /* The mobile version */
+  @media(max-width:375px){
+    .conmenu img{
+        width:80vw; 
+    }
+
+    .conSub-item{
+        width:80vw;
+    }
+    
+  }

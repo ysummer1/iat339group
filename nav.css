@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  border: 0;
+}
+/* The position of nav */
+.mainnav{
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+}
+
+/* THe logo on nav */
+.logo a{
+  display: inline-block;
+  width:11rem;
+  height: 0rem;
+  padding-top:3.3rem;
+  overflow: hidden;
+  background-image: url(https://jennaraecakes.com/wp-content/themes/jennaraecakes/assets/images/svg/JRC_icon_logo_full.svg);
+  background-size: 11rem 5rem;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  text-indent: 20rem;
+  margin:0;
+}
+
+.logo{
+  margin: -.7rem 0 !important;
+}
+
+/* background color */
+nav {
+  background: rgb(138,174,162);
+}
+
+/* each content of nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  font-size:1.5rem;
+
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+
+  color: rgb(101,116,113);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 1rem;
+
+}
+
+/* the effect of click and onclick the content */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+/* the effect of mosue hover */
+nav ul li a:hover {
+  background-color: rgb(101,116,113);
+	color: white;
+	text-decoration: none;
+}
+/* underline */
+nav  ul li a,
+nav .fill ul li a {
+  position: relative;
+}
+
+nav  ul li a:after,
+nav .fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 0.15rem;
+}
+
+nav  ul li a:hover:after {
+  width: 100%;
+}
+
+/* the background color of content after interact */
+nav .fill ul li a {
+  transition: all 2s;
+}
+
+nav .fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav .fill ul li a:hover {
+  color: rgb(102,173,150);
+  z-index: 1;
+}
+nav .fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+nav .current {
+background-color: rgb(228,209,143);
+}
+	
+/* the footer */
+.footer{ 
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  background: rgb(138,174,162);
+  color: rgb(82, 94, 91);
+  font-size:1.5rem;
+}
+
+.midFooter, .rightFooter{
+  width:25rem;
+  padding-top:5vh;
+  padding-bottom:5vh;
+}
+
+.leftFooter{
+  width:25rem;
+  padding-top:2vh;
+  
+}
+
+.leftFooter ul{
+  list-style: none;
+}
+
+.leftFooter a{
+  text-decoration: none;
+  color: rgb(101,116,113);
+}
+
+
