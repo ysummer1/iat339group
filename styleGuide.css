@@ -68,7 +68,7 @@ section code {
 }
 
 .mainnav{
-  position: fixed;
+
   width: 100%;
   overflow: hidden;
   top: 0;
@@ -96,7 +96,6 @@ section code {
 
 nav {
   background: rgb(138,174,162);
-  /* position:fixed; */
 
 }
 nav ul {
@@ -183,4 +182,10 @@ nav .fill ul li a:hover:after {
 nav .current {
 background-color: rgb(228,209,143);
 }
-	
+  
+
+
+
+
+/*nav */
+

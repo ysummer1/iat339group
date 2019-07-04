@@ -1,118 +1,206 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <title>Style Guide Template</title>
+  <meta charset="utf-8">
+  <title>Style Guide Template</title>
 
-    <link href="css/main.css" rel="stylesheet">
+  <link href="styleGuide.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <h1>Style Guide Template</h1>
+  <h1>Style Guide Template</h1>
 
-    <p>A template you can use to start building out your own style guides with.</p>
-
-
-    <nav>
-      
-      <p>
-        Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
-      </p>
-
-    </nav>
+  <p>A template you can use to start building out your own style guides with.</p>
 
 
+  <nav>
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
+    <p>
+      Go to:
+      <a href="#interactive_elements">Interactive Elements</a>,
+      <a href="#text_elements">Text Elements</a>,
+      <a href="#combined_elements">Combined Elements</a>,
+    </p>
 
-      <!-- Default Button styling section -->
-      <section>
+  </nav>
 
-        <h2>Navigation Button</h2>
-        
 
-        <h3>CSS selector:</h3>
-        <p>.button-nav</p>
 
-        <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
 
-        <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
+    <!-- Default Button styling section -->
+    <section>
 
-      </section>
+      <h2>Navigation Bar</h2>
 
-      <section>
-        <h2>In-text link</h2>
-      </section>
+      <div class=mainnav>
 
-      <section>
-        <h2>Submit/Reset Buttons</h2>
-      </section>
+        <nav>
+          <ul>
+            <li class="logo"><a href="HomePage.html">
+                <!-- <img src="https://via.placeholder.com/150x80" alt=""> --></a></li>
+            <li><a href="BirthdayCake.html">BIRTHDAY CAKE</a></li>
+            <li><a href="Bakery.html">BAKERY</a></li>
+            <li><a class="current" href="about.html">ABOUT</a></li>
+            <li><a href="Basket.html">BASKET</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
 
-      <section>
-        <h2>Text Input Field</h2>
-      </section>
+
+
+      <h3>CSS selector:</h3>
+      <p>.button-nav</p>
+      <p>.logo</p>
+      <p>.current</p>
+      <h3>Sample code:</h3>
+      <p>html</p>
+        <code>
+
+            &lt;div class=mainnav&gt;
+
+            &lt;nav&gt;
+            &lt;ul&gt;
+            &lt;li class="logo"&gt;&lt; href="HomePage.html"&gt;
+                              <!-- <img src="https://via.placeholder.com/150x80" alt=""> -->&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href="BirthdayCake.html">BIRTHDAY CAKE&lt;/a>&lt;/li&gt;
+                              &lt;li&gt;&lt;a href="Bakery.html">BAKERY&lt;/a>&lt;/li&gt;
+                              &lt;li&gt;&lt;a class="current" href="about.html">ABOUT&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href="Basket.html">BASKET&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href="contact.html">CONTACT&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                              &lt;/nav&gt;
+
+
+          </code>
+
+<p>css</p>
+        <code>
+              mainnav{
+
+                width: 100%;
+                overflow: hidden;
+                top: 0;
+                z-index: 10;
+              }
+              nav {
+                background: rgb(138,174,162);
+              
+              }
+              nav ul {
+
+                /* text-align: bottom; */
+                list-style: none;
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: space-around;
+                font-size:1.5rem;
+              
+              }
+              nav ul li {
+                display: inline-block;
+              }
+              
+              nav ul li a {
+                display: block;
+                padding: 0.8rem;
+                text-decoration: none;
+              
+                color: rgb(101,116,113);
+                font-weight: 800;
+                text-transform: uppercase;
+                margin: 0 1rem;
+              
+              }
+              
+              nav ul li a,
+              nav ul li a:after,
+              nav ul li a:before {
+                transition: all .5s;
+              }
+              nav ul li a:hover {
+              
+                background-color: rgb(101,116,113);
+                color: white;
+                    text-decoration: none;
+              }              
+  
+  
+            </code>
+
+      </div>
+      <h3>Rendered element:</h3>
+      <a class="button" href="#">Default Button</a>
 
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-
-      <section>
-        <h2>Headings</h2>
-      </section>
-
-      <section>
-        <h2>Paragraphs</h2>
-      </section>
-
-      <section>
-        <h2>Bulleted Lists</h2>
-      </section>
-
-      <section>
-        <h2>Numbered Lists</h2>
-      </section>
-
+    <section>
+      <h2>Submit/Reset Buttons</h2>
     </section>
-    <!-- // TEXT ELEMENTS SECTION -->
 
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-
-      <section>
-        <h2>Main Navigation</h2>
-        <h3>CSS selector:</h3>
-        <p>.button-nav</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
-      </section>
-
-      <section>
-        <h2>Product Listing</h2>
-      </section>
-
+    <section>
+      <h2>Text Input Field</h2>
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
-  </body>
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+
+    <section>
+      <h2>Headings</h2>
+    </section>
+
+    <section>
+      <h2>Paragraphs</h2>
+    </section>
+
+    <section>
+      <h2>Bulleted Lists</h2>
+    </section>
+
+    <section>
+      <h2>Numbered Lists</h2>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+
+    <section>
+      <h2>Main Navigation</h2>
+      <h3>CSS selector:</h3>
+      <p>.button-nav</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="button" href="#">Default Button</a>
+    </section>
+
+    <section>
+      <h2>Product Listing</h2>
+    </section>
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+
+</body>
+
 </html>
