@@ -187,5 +187,103 @@ background-color: rgb(228,209,143);
 
 
 
-/*nav */
+/*button*/
 
+
+.exploreButton{
+  font-size: 2rem;
+  width:10vw;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+}
+
+.exploreButton{
+position: relative;
+width: 250px; height: 60px;
+background: rgb(138,174,162);
+margin: 0 auto;
+margin-top: 40px;
+overflow: hidden;
+z-index: 1;
+cursor: pointer;
+transition: color .3s;
+/* Typo */
+line-height: 60px;
+text-align: center;
+color: #fff;
+}
+
+.exploreButton:after {
+position: absolute;
+top: 90%; left: 0;
+width: 100%; height: 100%;
+background:rgb(101,116,113);
+content: "";
+z-index: -2;
+transition: transform .3s;
+}
+
+.exploreButton:hover::after {
+  transform: translateY(-80%);
+  transition: transform .3s;
+}
+
+/* headings */
+
+.homeTitle h1,
+.homeTitle h2,
+.homeTitle h3,
+.homeTitle h4,
+.homeTitle p
+{
+  font-family: 'Rubik', sans-serif;
+
+}
+
+
+/* colors */
+.colors{
+padding:2rem 2rem;
+
+
+}
+.color1{
+
+  background-color:rgb(228,209,143);
+padding:3rem 3rem;
+}
+
+.color2{
+
+  background-color:
+  rgb(237,223,214);
+  padding:3rem 3rem;
+}
+.color3{
+
+  background-color:
+  rgb(99,148,178);
+  padding:3rem 3rem;
+
+}
+.color4{
+
+  background-color:
+  rgb(138,174,162);
+  padding:3rem 3rem;
+
+}
+.color5{
+
+  background-color:
+  rgb(101,116,113);
+  padding:3rem 3rem;
+
+}
+.color6{
+
+  background-color:
+  rgb(81,82,84);
+  padding:3rem 3rem;
+}
