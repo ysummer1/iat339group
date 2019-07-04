@@ -287,3 +287,110 @@ padding:3rem 3rem;
   rgb(81,82,84);
   padding:3rem 3rem;
 }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.feedback{
+  display: block;
+  width:80vw;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top:10vh;
+}
+
+
+.detailedWindow{
+  position: relative;
+  /* display: none; */
+  /* top:7rem;
+  left:20vw;
+  right:20vw; */
+  z-index:1;
+  width:60vw;
+  height:80vh;
+  background: rgb(0,0,0, 0.8);
+}
+
+.detailedContainer{
+  display: flex;
+  flex-wrap:wrap;
+  padding-top:10vh;
+}
+
+.detailedImage{
+  margin-left:5vw;
+  width:20vw;
+}
+
+.detailedImage img{ 
+  width:20vw;
+  height:25vw;
+}
+
+.detailedList{
+  width:20rem;
+  margin-left:5vw;
+}
+
+.detailedButton{
+  padding:1rem;
+  margin-top:5vw;
+  background: rgb(138,174,162);
+  color:white;
+  font-weight: bold;
+}
+
+/* <<<<<<< HEAD */
+.detailedList p{
+  color:white;
+}
+
+.detailedList ul{
+  color:white;
+}
+
+.closeIcon{
+  float:right;
+  color:white;
+  font-size:2rem;
+}
+
+.closeIcon:hover{
+  cursor: pointer;
+}
+
+.footer{ 
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  background: rgb(138,174,162);
+  color: rgb(82, 94, 91);
+  font-size:1.5rem;
+}
